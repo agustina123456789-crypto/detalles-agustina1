@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/flowers.png" type="image/x-icon">
+  <title>Flowers</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .greetings span {
+      font-size: 8vw;
+      color: #d6336c;
+      display: inline-block;
+      margin: 5px;
+      line-height: 1;
+    }
+
+    .description span {
+      font-size: 1.5em;
+      color: #555;
+    }
+
+    .botones {
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .perfil-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 10px;
+    }
+
+    .card {
+      background-color: #ffe6eb;
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      max-width: 90%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #c2185b;
+    }
+
+    .card a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .card button {
+      background: none;
+      border: none;
+      width: 100%;
+      padding: 0;
+    }
+
+    /* Ajustes para pantallas muy pequeñas */
+    @media (max-width: 480px) {
+      .greetings span {
+        font-size: 12vw;
+      }
+      .perfil-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="greetings">
+    <span>H</span>
+    <span>o</span>
+    <span>l</span>
+    <span>a</span>
+    <span>!</span>
+  </div>
+
+  <div class="description">
+    <span>ENTRA EN TU PERFIL :)</span>
+  </div>
+
+  <div class="perfil-cards">
+    <div class="card">
+      <h3>Mami</h3>
+      <button class="botones">
+        <a href="flower.html">CLICK AQUÍ</a>
+      </button>
+    </div>
+    <div class="card">
+      <h3>Mamá</h3>
+      <button class="botones">
+        <a href="flower2.html">CLICK AQUÍ</a>
+      </button>
+    </div>
+    <div class="card">
+      <h3>Tía Anyi</h3>
+      <button class="botones">
+        <a href="flower3.html">CLICK AQUÍ</a>
+      </button>
+    </div>
+    <div class="card">
+      <h3>Tía Nicole</h3>
+      <button class="botones">
+        <a href="flower4.html">CLICK AQUÍ</a>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
